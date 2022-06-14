@@ -3,7 +3,7 @@ import styles from './emailEnter.module.scss';
 const EmailEnter = () => {
   return (
     <div className={styles.block}>
-      <input type="text" className={styles.input} />
+      <input type="text" className={styles.input} placeholder="Email" />
       <div className={styles.button}>Log in</div>
     </div>
   );

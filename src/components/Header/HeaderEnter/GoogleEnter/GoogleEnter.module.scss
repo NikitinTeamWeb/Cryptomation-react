@@ -1,0 +1,25 @@
+@import '../../../../styles/var';
+
+.button {
+  background: rgba($violet, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.icon {
+  max-width: 19px;
+  min-width: 19px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

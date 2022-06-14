@@ -1,13 +1,16 @@
 import EmailEnter from './EmailEnter/EmailEnter';
+import GoogleEnter from './GoogleEnter/GoogleEnter';
 
 import styles from './headerEnter.module.scss';
 
 const HeaderEnter = () => {
   return (
-    <div className={styles.block}>
-      HeaderEnter
-      <EmailEnter />
-    </div>
+    <>
+      <div className={styles.top}>
+        <EmailEnter />
+      </div>
+      <GoogleEnter />
+    </>
   );
 };
 

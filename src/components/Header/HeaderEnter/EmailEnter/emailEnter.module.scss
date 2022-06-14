@@ -13,6 +13,14 @@
   line-height: 14px;
   color: $white;
   padding: 13px 20px;
+  width: 100%;
+  &::placeholder {
+    color: $white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: 'Montserrat', sans-serif;
+  }
 }
 
 .button {
@@ -24,6 +32,7 @@
   font-size: 14px;
   line-height: 14px;
   color: $white;
-  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+  // font-family: 'Montserrat', sans-serif;
   cursor: pointer;
 }

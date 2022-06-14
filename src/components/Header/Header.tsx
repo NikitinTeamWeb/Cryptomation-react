@@ -7,16 +7,20 @@ import Logo from '../../assets/images/logo.png';
 const Header = () => {
   return (
     <div className={styles.header}>
-      <a href="#" className="logo">
-        <img src={Logo.src} alt="" />
-      </a>
+      <div className="wrapper">
+        <div className={styles.content}>
+          <a href="#" className={styles.logo}>
+            <img src={Logo.src} alt="" />
+          </a>
 
-      <div className={styles.list}>
-        <HeaderList />
-      </div>
+          <div className={styles.list}>
+            <HeaderList />
+          </div>
 
-      <div className={styles.enter}>
-        <HeaderEnter />
+          <div className={styles.enter}>
+            <HeaderEnter />
+          </div>
+        </div>
       </div>
     </div>
   );
