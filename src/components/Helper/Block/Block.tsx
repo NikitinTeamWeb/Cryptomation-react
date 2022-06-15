@@ -1,6 +1,6 @@
 import { ReactNode, FC } from 'react';
-
-import Textarea from './Textarea/Textarea';
+import Link from 'next/link';
+import Textarea from '../Textarea/Textarea';
 
 import styles from './block.module.scss';
 import LinkYellow from '../../../assets/images/link_yellow.png';
@@ -8,9 +8,10 @@ import LinkYellow from '../../../assets/images/link_yellow.png';
 interface IProps {
   title: string;
   text: string;
+  link: string;
 }
 
-const Block: FC<IProps> = ({ title, text }) => {
+const Block: FC<IProps> = ({ title, text, link }) => {
   return (
     <div className={styles.content}>
       <h3 className={styles.title}>{title}</h3>
@@ -18,12 +19,14 @@ const Block: FC<IProps> = ({ title, text }) => {
         <Textarea />
       </div>
       <p className={styles.text}>{text}</p>
-      <div className={styles.documentation}>
-        <span className={styles.icon}>
-          <img src={LinkYellow.src} alt="" />
-        </span>
-        Documentation
-      </div>
+      <Link href={link}>
+        <a className={styles.documentation}>
+          <span className={styles.icon}>
+            <img src={LinkYellow.src} alt="" />
+          </span>
+          Documentation
+        </a>
+      </Link>
     </div>
   );
 };

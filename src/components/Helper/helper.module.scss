@@ -9,24 +9,14 @@
   padding: 160px 0;
 }
 
-.title {
-  font-weight: 400;
-  font-size: 66px;
-  line-height: 58px;
-  text-align: center;
-  letter-spacing: -1.5px;
-  text-transform: uppercase;
-  color: $white;
+.el1 {
+  position: absolute;
+  right: 8%;
+  top: -6%;
 }
 
-.blocks {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 80px -20px 0;
-}
-
-.block {
-  width: calc(33.333% - 40px);
-  margin: 0 20px;
+.el2 {
+  position: absolute;
+  left: 15%;
+  top: 10%;
 }

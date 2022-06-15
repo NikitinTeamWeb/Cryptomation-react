@@ -31,6 +31,7 @@
   color: rgba($white, 0.5);
   cursor: pointer;
   transition: all 0.3s ease-in;
+  text-decoration: none;
   &:hover {
     color: $yellow;
   }

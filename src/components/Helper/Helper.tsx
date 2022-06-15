@@ -1,34 +1,24 @@
+import Blocks from './Blocks/Blocks';
+
 import styles from './helper.module.scss';
 
-import Block from './Block/Block';
+import El1 from '../../assets/images/Powered/brackets_blue.svg';
+import El2 from '../../assets/images/Powered/brackets_yellow.svg';
 
 const Helper = () => {
   return (
     <div className={styles.section}>
       <div className="wrapper">
+        <div className={styles.el1}>
+          <El1 />
+        </div>
+        <div className={styles.el2}>
+          <El2 />
+        </div>
         <h2 className="title white">
           Helper API <br /> for you application
         </h2>
-        <div className={styles.blocks}>
-          <div className={styles.block}>
-            <Block
-              title="Gas station API"
-              text="Gas station api predict gas price for any network, use it for fast transaction."
-            />
-          </div>
-          <div className={styles.block}>
-            <Block
-              title="Scan similar api"
-              text="Scan similar api - we have kept the polygonscan contract so that you can try our service with minimal effort."
-            />
-          </div>
-          <div className={styles.block}>
-            <Block
-              title="Cryptocurrency API"
-              text="Get actual price for any coin/token by simply api."
-            />
-          </div>
-        </div>
+        <Blocks />
       </div>
     </div>
   );
