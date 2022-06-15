@@ -1,0 +1,43 @@
+@import '../../styles/var';
+
+.section {
+  background-image: url(../../assets/images/Automation/back.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #03031a;
+  padding: 164px 0 158px;
+}
+
+.el1 {
+  position: absolute;
+  right: 7%;
+  top: -12%;
+}
+
+.el2 {
+  position: absolute;
+  left: 8%;
+  top: 42%;
+}
+
+.text {
+  max-width: 540px;
+  width: 100%;
+  margin: 34px auto 0;
+  color: $white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $white;
+  position: relative;
+  z-index: 2;
+}
+
+.scheme {
+  max-width: 726px;
+  width: 100%;
+  margin: 60px auto 0;
+}

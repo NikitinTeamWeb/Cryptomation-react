@@ -6,6 +6,7 @@ import MainSection from '../components/MainSection/MainSection';
 import Powered from '../components/Powered/Powered';
 import Helper from '../components/Helper/Helper';
 import Lightweight from '../components/Lightweight/Lightweight';
+import Automation from '../components/Automation/Automation';
 
 import Layout from '../components/Layout/Layout';
 
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <Powered />
       <Helper />
       <Lightweight />
+      <Automation />
     </Layout>
   );
 };
