@@ -7,6 +7,7 @@ import Powered from '../components/Powered/Powered';
 import Helper from '../components/Helper/Helper';
 import Lightweight from '../components/Lightweight/Lightweight';
 import Automation from '../components/Automation/Automation';
+import Blockchain from '../components/Blockchain/Blockchain';
 
 import Layout from '../components/Layout/Layout';
 
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <Helper />
       <Lightweight />
       <Automation />
+      <Blockchain />
     </Layout>
   );
 };
