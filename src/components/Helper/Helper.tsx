@@ -6,7 +6,7 @@ const Helper = () => {
   return (
     <div className={styles.section}>
       <div className="wrapper">
-        <h2 className={styles.title}>
+        <h2 className="title white">
           Helper API <br /> for you application
         </h2>
         <div className={styles.blocks}>

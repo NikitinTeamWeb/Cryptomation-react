@@ -17,6 +17,7 @@ export default class MyDocument extends Document {
           <link rel="icon" type="image/x-icon" href="/favicon.png" />
           <link rel="stylesheet" href="/fonts/Montserrat/stylesheet.css" />
           <link rel="stylesheet" href="/fonts/Odibee_Sans/stylesheet.css" />
+          <link rel="stylesheet" href="/fonts/JetBrains_Mono/stylesheet.css" />
         </Head>
         <body>
           <Main />

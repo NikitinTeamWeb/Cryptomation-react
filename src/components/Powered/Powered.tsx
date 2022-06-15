@@ -1,12 +1,20 @@
-import styles from './powered.module.scss';
 import Blocks from './Blocks/Blocks';
-import { arrayBuffer } from 'stream/consumers';
+
+import El1 from '../../assets/images/Powered/brackets_blue.svg';
+import El2 from '../../assets/images/Powered/brackets_yellow.svg';
+import styles from './powered.module.scss';
 
 const Powered = () => {
   return (
     <div className={styles.section}>
       <div className="wrapper">
-        <h2 className={styles.title}>Powered API</h2>
+        <div className={styles.el1}>
+          <El1 />
+        </div>
+        <div className={styles.el2}>
+          <El2 />
+        </div>
+        <h2 className="title">Powered API</h2>
         <h3 className={styles.subtitle}>
           Rest API & Webhooks && GRPC methods.
         </h3>

@@ -1,5 +1,6 @@
 import styles from './blocks.module.scss';
 import Block from '../Block/Block';
+import SQL from '../../../assets/images/Powered/sql.svg';
 
 const Blocks = () => {
   const arr = [
@@ -19,7 +20,7 @@ const Blocks = () => {
     },
     {
       id: 2,
-      title: 'GRPC methods',
+      title: 'SQL data lake',
       text: 'Need specific information for data analysis?<br><span>Get access</span>to the blockchain through the <span>database</span>. Build your reports and visualize on any BI',
       image: '',
       link: '',
@@ -33,7 +34,7 @@ const Blocks = () => {
       {arr.map(({ id, title, text, imageText, image, link }) => {
         return (
           <div className={styles.block}>
-            <Block title={title} text={text} link={link}/>
+            <Block title={title} text={text} link={link} />
           </div>
         );
       })}

@@ -2,7 +2,7 @@ import { ReactNode, FC } from 'react';
 import Link from 'next/link';
 import styles from './block.module.scss';
 
-import Textarea from './Textarea/Textarea';
+import Textarea from '../Textarea/Textarea';
 import LinkBlue from '../../../assets/images/link_blue.png';
 
 interface IProps {
@@ -13,12 +13,10 @@ interface IProps {
 
 const Block: FC<IProps> = ({ title, text, link }) => {
   return (
-    <div className={styles.content}>
-      <div className={styles.textarea}>
-        <Textarea />
-      </div>
+    <>
+      <Textarea />
       <h3 className={styles.title}>{title}</h3>
-      <p dangerouslySetInnerHTML={{ __html: text }}></p>
+      <p dangerouslySetInnerHTML={{ __html: text }} className={styles.text}></p>
       <Link href={link}>
         <a className={styles.documentation}>
           <span className={styles.icon}>
@@ -27,7 +25,7 @@ const Block: FC<IProps> = ({ title, text, link }) => {
           Documentation
         </a>
       </Link>
-    </div>
+    </>
   );
 };
 export default Block;

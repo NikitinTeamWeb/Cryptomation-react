@@ -1,27 +1,13 @@
 @import '../../styles/var';
 
 .section {
-  padding: 160px 0;
-}
-
-.title {
-  font-weight: 400;
-  font-size: 66px;
-  line-height: 52px;
-  text-align: center;
-  letter-spacing: -1.5px;
-  color: $black;
+  padding: 157px 0 170px;
 }
 
 .subtitle {
-  font-weight: 400;
-  font-size: 46px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: -1px;
-  text-transform: uppercase;
   color: $black;
-  margin-top: 54px;
+  margin-top: 51px;
+  text-align: center;
 }
 
 .text {
@@ -33,4 +19,16 @@
   max-width: 622px;
   width: 100%;
   margin: 16px auto 80px;
+}
+
+.el1 {
+  position: absolute;
+  left: 24%;
+  top: -8%;
+}
+
+.el2 {
+  position: absolute;
+  right: 11%;
+  top: 13%;
 }

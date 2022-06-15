@@ -7,7 +7,7 @@ const MainSection = () => {
   return (
     <div className={styles.section}>
       <div className="wrapper wrapper-big">
-        <h1 className={styles.title}>
+        <h1 className="mainTitle">
           We give you access <br /> to a sea of crypto data.
         </h1>
         <h2 className={styles.subtitle}>

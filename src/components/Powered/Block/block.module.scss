@@ -1,11 +1,6 @@
 @import '../../../styles/var';
 
 .title {
-  font-weight: 400;
-  font-size: 46px;
-  line-height: 42px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
   color: $black;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -16,12 +11,11 @@
   font-size: 14px;
   line-height: 24px;
   color: rgba($black, 0.7);
-  margin-top: 40px;
   span {
     background: linear-gradient(180deg, #ffcf5e 0%, #ffb55e 135.22%);
     border-radius: 5px;
-    padding: 3px 5px;
-    margin-right: 5px;
+    padding: 2px 5px 3px;
+    margin-right: 3px;
   }
 }
 
@@ -29,7 +23,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 14px;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
@@ -38,7 +32,7 @@
 }
 
 .icon {
-  margin-right: 10px;
+  margin-right: 11px;
   max-width: 24px;
   min-width: 24px;
 }

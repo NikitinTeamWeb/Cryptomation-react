@@ -8,9 +8,7 @@ const Lightweight = () => {
       <div className="wrapper">
         <div className={styles.content}>
           <div className={styles.info}>
-            <h2 className={styles.title}>
-              Lightweight SDK for fast creating Dapps
-            </h2>
+            <h2 className="title">Lightweight SDK for fast creating Dapps</h2>
             <div className={styles.text}>
               <span className="yellowBlock">Bring web3</span> to any platform
               simply by installing a small SDK. Authenticate user, perform

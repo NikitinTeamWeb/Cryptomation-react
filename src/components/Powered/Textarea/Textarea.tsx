@@ -1,12 +1,12 @@
 import styles from './textarea.module.scss';
 
-import LightsIcon from '../../../../assets/images/Powered/Lights.png';
+import LightsIcon from '../../../assets/images/Powered/Lights.svg';
 
 const Textarea = () => {
   return (
     <div className={styles.block}>
       <div className={styles.top}>
-        <img src={LightsIcon.src} alt="" />
+        <LightsIcon />
       </div>
       <p className={styles.text}>
         {`http --json POST 'https://rpc.testnet.near.org/' \
