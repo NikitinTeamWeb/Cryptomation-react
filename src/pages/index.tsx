@@ -8,6 +8,7 @@ import Helper from '../components/Helper/Helper';
 import Lightweight from '../components/Lightweight/Lightweight';
 import Automation from '../components/Automation/Automation';
 import Blockchain from '../components/Blockchain/Blockchain';
+import Pricing from '../components/Pricing/Pricing';
 
 import Layout from '../components/Layout/Layout';
 
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <Lightweight />
       <Automation />
       <Blockchain />
+      <Pricing />
     </Layout>
   );
 };
