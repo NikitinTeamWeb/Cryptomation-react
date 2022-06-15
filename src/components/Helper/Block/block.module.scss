@@ -1,0 +1,47 @@
+@import '../../../styles/var';
+
+.title {
+  font-size: 46px;
+  line-height: 42px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: $yellow;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $white;
+  margin-top: 40px;
+}
+
+.textarea {
+  margin-top: 40px;
+}
+
+.documentation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba($white, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.icon {
+  max-width: 24px;
+  width: 100%;
+  min-width: 24px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,24 @@
+@import '../../../../styles/var';
+
+.block {
+  background: linear-gradient(179.27deg, #50104c 0.63%, #11073b 241.08%);
+  border-radius: 15px;
+  padding: 10px 15px 21px;
+}
+
+.text {
+  max-height: 324px;
+  height: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  color: $yellow;
+  overflow-y: auto;
+}
+
+.top {
+  max-width: 52px;
+  width: 100%;
+  margin-bottom: 15px;
+}

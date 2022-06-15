@@ -1,8 +1,5 @@
 @import '../../../styles/var';
 
-.textarea {
-}
-
 .title {
   font-weight: 400;
   font-size: 46px;
@@ -38,4 +35,5 @@
 .icon {
   margin-right: 10px;
   max-width: 24px;
+  min-width: 24px;
 }
