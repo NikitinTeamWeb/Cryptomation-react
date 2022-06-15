@@ -10,9 +10,9 @@ const MainSection = () => {
           We give you access to a sea of crypto data.
         </h1>
         <h2 className={styles.subtitle}>
-          <span className={styles.yellowBlock}>Build your own apps</span> using
-          this data for your automation, analytics through standard development
-          tools such as <span className={styles.yellow}>Rest API</span> /
+          <span className="yellowBlock">Build your own apps</span> using this
+          data for your automation, analytics through standard development tools
+          such as <span className={styles.yellow}>Rest API</span> /
           <span className={styles.red}>gRPC</span> /
           <span className={styles.blue}>JDBC</span>.
         </h2>

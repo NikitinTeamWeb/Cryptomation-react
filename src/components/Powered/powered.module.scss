@@ -32,24 +32,5 @@
   color: rgba($black, 0.7);
   max-width: 622px;
   width: 100%;
-  margin: 16px auto 0;
-}
-
-.yellowBlock {
-  background: $yellow;
-  color: $black;
-  background: linear-gradient(180deg, #ffcf5e 0%, #ffb55e 135.22%);
-  border-radius: 5px;
-  padding: 2px 6px;
-}
-
-.blocks {
-  display: flex;
-  justify-content: space-between;
-  margin: 80px -20px 0;
-}
-
-.block {
-  width: calc(33.333% - 20px);
-  margin: 0 20px;
+  margin: 16px auto 80px;
 }

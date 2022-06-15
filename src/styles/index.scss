@@ -1,7 +1,6 @@
 @import './reset.css';
 @import './var';
 
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -11,4 +10,12 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.yellowBlock {
+  background: $yellow;
+  color: $black;
+  background: linear-gradient(180deg, #ffcf5e 0%, #ffb55e 135.22%);
+  border-radius: 5px;
+  padding: 2px 6px;
 }
