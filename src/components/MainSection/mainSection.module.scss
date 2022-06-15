@@ -26,13 +26,11 @@
   font-size: 14px;
   line-height: 24px;
   color: $white;
-  max-width: 560px;
+  max-width: 580px;
   width: 100%;
   margin: 10px auto 0;
   text-align: center;
 }
-
-
 
 .yellow {
   color: $yellow;
@@ -53,7 +51,7 @@
   color: $blueLight;
   position: relative;
   display: inline-block;
-  padding-left: 8px;
+  padding-left: 5px;
   &:after {
     content: '';
     position: absolute;
@@ -69,8 +67,7 @@
   color: $red;
   position: relative;
   display: inline-block;
-  padding-left: 8px;
-
+  padding-left: 5px;
   &:after {
     content: '';
     position: absolute;
@@ -83,20 +80,11 @@
 }
 
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: $blue;
-  border-radius: 10px;
-  padding: 21px 20px;
-  margin-left: 10px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
-  color: $white;
-  white-space: nowrap;
-  cursor: pointer;
   max-width: 232px;
   width: 100%;
-  margin: 20px auto 0;
+  margin: -2px auto 0;
+}
+
+.scheme {
+  margin: -47px auto 0;
 }
