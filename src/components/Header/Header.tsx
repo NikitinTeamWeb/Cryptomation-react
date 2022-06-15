@@ -3,7 +3,7 @@ import HeaderEnter from './HeaderEnter/HeaderEnter';
 import styles from './header.module.scss';
 
 import Logo from '../../assets/images/logo.png';
-import LogoSVG from '../../assets/images/logo.svg'
+import LogoSVG from '../../assets/images/logo.svg';
 
 const Header = () => {
   return (
@@ -11,9 +11,8 @@ const Header = () => {
       <div className="wrapper">
         <div className={styles.content}>
           <a href="#" className={styles.logo}>
-            <img src={Logo.src} alt="" />
+            <LogoSVG />
           </a>
-          <LogoSVG />
 
           <div className={styles.list}>
             <HeaderList />

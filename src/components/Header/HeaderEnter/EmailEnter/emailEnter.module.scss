@@ -5,14 +5,14 @@
   justify-content: flex-end;
 }
 .input {
-  border: 1px solid $white;
+  border: 1px solid rgba($white, 0.3);
   background: transparent;
   border-radius: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
   color: $white;
-  padding: 13px 20px;
+  padding: 11px 20px 11px;
   width: 100%;
   &::placeholder {
     color: $white;
@@ -33,6 +33,5 @@
   line-height: 14px;
   color: $white;
   white-space: nowrap;
-  // font-family: 'Montserrat', sans-serif;
   cursor: pointer;
 }
