@@ -1,0 +1,31 @@
+@import '../../../styles/var';
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: $white;
+  text-decoration: none;
+  margin-right: 42px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    color: $white;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}

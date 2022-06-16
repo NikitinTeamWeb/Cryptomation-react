@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Textarea from '../Textarea/Textarea';
 
 import styles from './block.module.scss';
-import LinkYellow from '../../../assets/images/link_yellow.png';
+import LinkYellow from '../../../assets/images/link_yellow.svg';
 
 interface IProps {
   title: string;
@@ -22,7 +22,7 @@ const Block: FC<IProps> = ({ title, text, link }) => {
       <Link href={link}>
         <a className={styles.documentation}>
           <span className={styles.icon}>
-            <img src={LinkYellow.src} alt="" />
+            <LinkYellow />
           </span>
           Documentation
         </a>

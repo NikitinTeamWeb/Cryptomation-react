@@ -1,0 +1,38 @@
+@import '../../styles/var';
+
+.section {
+  padding: 120px 0 119px;
+  background-image: url(../../assets/images/Footer/back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #03031a;
+  h2 {
+    max-width: max-content;
+    text-align: left;
+    color: $yellow;
+    line-height: 52px;
+    margin: 0 auto;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.bottom {
+  margin-top: 66px;
+}
+
+.questionList {
+  flex-grow: 1;
+  padding-right: 113px;
+  margin-bottom: 13px;
+}
+
+.content {
+  width: 100%;
+}

@@ -1,8 +1,9 @@
+import Link from 'next/link';
+
 import HeaderList from './HeaderList/HeaderList';
 import HeaderEnter from './HeaderEnter/HeaderEnter';
 import styles from './header.module.scss';
 
-import Logo from '../../assets/images/logo.png';
 import LogoSVG from '../../assets/images/logo.svg';
 
 const Header = () => {
@@ -10,10 +11,11 @@ const Header = () => {
     <div className={styles.header}>
       <div className="wrapper">
         <div className={styles.content}>
-          <a href="#" className={styles.logo}>
-            <LogoSVG />
-          </a>
-
+          <Link href="/123">
+            <a className={styles.logo}>
+              <LogoSVG />
+            </a>
+          </Link>
           <div className={styles.list}>
             <HeaderList />
           </div>

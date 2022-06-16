@@ -2,7 +2,7 @@ import { FC } from 'react';
 import Link from 'next/link';
 
 import styles from './block.module.scss';
-import LinkYellow from '../../../assets/images/link_yellow.png';
+import LinkYellow from '../../../assets/images/link_yellow.svg';
 
 interface IProps {
   item: IProp;
@@ -30,7 +30,7 @@ const Block: FC<IProps> = ({ item }) => {
       <Link href={item.link}>
         <a className={styles.more}>
           <span className={styles.icon}>
-            <img src={LinkYellow.src} alt="" />
+            <LinkYellow />
           </span>
           More details
         </a>

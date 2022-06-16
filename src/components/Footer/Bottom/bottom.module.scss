@@ -1,0 +1,15 @@
+@import '../../../styles/var';
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba($lila, 0.7);
+}

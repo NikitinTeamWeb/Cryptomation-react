@@ -1,0 +1,25 @@
+@import '../../../styles/var';
+
+.list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.item {
+  color: $lila;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: none;
+  margin-right: 40px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

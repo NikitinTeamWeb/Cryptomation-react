@@ -1,0 +1,17 @@
+@import '../../../styles/var';
+
+.list {
+  margin-left: 56px;
+}
+
+.item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
+  color: $lila;
+  margin: 0 20px;
+  &:hover {
+    color: $white;
+  }
+}
