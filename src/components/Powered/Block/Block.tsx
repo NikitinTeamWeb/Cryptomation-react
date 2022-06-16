@@ -9,16 +9,16 @@ interface IProps {
   title: string;
   text: string;
   link: string;
-  image: any;
+  image?: any;
+  imageText?: string;
 }
 
-const Block: FC<IProps> = ({ title, text, link, image }) => {
+const Block: FC<IProps> = ({ title, text, link, image, imageText }) => {
   return (
     <>
-      <Textarea />
+      <Textarea image={image} imageText={imageText} />
       <h3 className={styles.title}>{title}</h3>
       <p dangerouslySetInnerHTML={{ __html: text }} className={styles.text}></p>
-      {image}
       <Link href={link}>
         <a className={styles.documentation}>
           <span className={styles.icon}>

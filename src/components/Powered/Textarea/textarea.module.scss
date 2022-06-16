@@ -6,6 +6,10 @@
   padding: 8px 15px 21px;
 }
 
+.blockImage {
+  padding: 0;
+}
+
 .text {
   max-height: 162px;
   min-height: 162px;
@@ -24,4 +28,10 @@
   max-width: 52px;
   width: 100%;
   margin-bottom: 13px;
+}
+
+.image {
+  svg {
+    width: 100%;
+  }
 }
