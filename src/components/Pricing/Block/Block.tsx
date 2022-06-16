@@ -11,7 +11,8 @@ interface IProps {
 interface IProp {
   title: string;
   subtitle: string;
-  price: number;
+  price?: number;
+  priceText?: string;
   list: Array<IItem>;
   button: IButton;
 }
@@ -31,10 +32,15 @@ const Block: FC<IProps> = ({ item }) => {
     <div className={styles.block}>
       <h3 className={styles.title}>{item.title}</h3>
       <h4 className={styles.subtitle}>{item.subtitle}</h4>
-      <p className={styles.price}>
-        ${item.price}
-        <span>mo</span>
-      </p>
+      {item.price ? (
+        <p className={styles.price}>
+          ${item.price}
+          <span>mo</span>
+        </p>
+      ) : (
+        <div className={styles.priceText}>{item.priceText}</div>
+      )}
+
       <ul className={styles.list}>
         {item.list.map(({ id, text }) => {
           return (

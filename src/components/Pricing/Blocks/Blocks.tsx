@@ -92,7 +92,7 @@ const Blocks = () => {
       id: 3,
       title: 'Enterprise',
       subtitle: '300K responses / month',
-      price: 12,
+      priceText: "let's talk",
       list: [
         {
           id: 0,
