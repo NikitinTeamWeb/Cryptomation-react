@@ -22,7 +22,7 @@ const Blocks = () => {
       id: 2,
       title: 'SQL data lake',
       text: 'Need specific information for data analysis?<br><span>Get access</span>to the blockchain through the <span>database</span>. Build your reports and visualize on any BI',
-      image: SQL,
+      image: <SQL />,
       link: '',
     },
   ];
@@ -34,7 +34,7 @@ const Blocks = () => {
       {arr.map(({ id, title, text, imageText, image, link }) => {
         return (
           <div className={styles.block}>
-            <Block title={title} text={text} link={link} />
+            <Block title={title} text={text} link={link} image={image} />
           </div>
         );
       })}
