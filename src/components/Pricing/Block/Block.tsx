@@ -1,6 +1,8 @@
 import { FC, ReactNode } from 'react';
+import cn from 'classnames';
 
 import styles from './block.module.scss';
+import CheckIcon from '../../../assets/images/check.svg';
 
 interface IProps {
   item: IProp;
@@ -37,12 +39,23 @@ const Block: FC<IProps> = ({ item }) => {
         {item.list.map(({ id, text }) => {
           return (
             <li className={styles.item} key={id}>
+              <span className={styles.icon}>
+                <CheckIcon />
+              </span>
               {text}
             </li>
           );
         })}
       </ul>
-      <div className={styles.button}>{item.button.text}</div>
+      <div
+        className={cn(styles.button, 'button button-sm', {
+          [styles.get]: item.button.type === 'get',
+          [styles.open]: item.button.type === 'open',
+          [styles.contact]: item.button.type === 'contact',
+        })}
+      >
+        {item.button.text}
+      </div>
     </div>
   );
 };

@@ -1,0 +1,10 @@
+.blocks {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px -20px 0;
+}
+
+.block {
+  width: calc(25% - 40px);
+  margin: 0 20px;
+}
