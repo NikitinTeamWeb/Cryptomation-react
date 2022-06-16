@@ -1,0 +1,63 @@
+@import '../../../styles/var';
+
+.block {
+  padding: 40px 40px 50px;
+  background: linear-gradient(179.27deg, #50104c 0.63%, #11073b 241.08%);
+  border-radius: 15px;
+  height: 100%;
+}
+
+.title {
+  font-family: $fontTitle;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: $white;
+  margin-top: 29px;
+  span {
+    background: linear-gradient(180deg, #ffcf5e 0%, #ffb55e 135.22%);
+    border-radius: 5px;
+    padding: 3px 5px 2px;
+    margin-right: 3px;
+    color: $black;
+  }
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: $yellow;
+  margin-top: 14px;
+  span {
+    background: linear-gradient(180deg, #ffcf5e 0%, #ffb55e 135.22%);
+    border-radius: 5px;
+    padding: 2px 5px 3px;
+    margin-right: 3px;
+    color: $black;
+  }
+}
+
+.more {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 13px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba($white, 0.5);
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+  &:hover {
+    color: $white;
+  }
+}
+
+.icon {
+  margin-right: 11px;
+  max-width: 24px;
+  min-width: 24px;
+}

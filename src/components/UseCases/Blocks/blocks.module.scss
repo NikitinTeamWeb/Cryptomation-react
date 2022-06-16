@@ -1,0 +1,14 @@
+.blocks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-right: -40px;
+  margin-top: 84px;
+}
+
+.block {
+  width: calc(33.333% - 40px);
+  margin: 0 40px 40px 0;
+  min-height: 342px;
+}
