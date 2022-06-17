@@ -15,3 +15,9 @@
     color: $white;
   }
 }
+
+@media (max-width: 1100px) {
+  .list {
+    margin-left: 0;
+  }
+}
