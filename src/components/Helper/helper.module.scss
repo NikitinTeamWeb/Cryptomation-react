@@ -20,3 +20,13 @@
   left: 15%;
   top: 10%;
 }
+
+@media (max-width: 768px) {
+  .el1,
+  .el2 {
+    display: none;
+  }
+  .section {
+    padding: 70px 0;
+  }
+}
