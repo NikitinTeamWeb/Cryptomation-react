@@ -17,3 +17,12 @@
   color: #ffffff;
   margin-top: 33px;
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+  .text {
+    margin-top: 20px;
+  }
+}
