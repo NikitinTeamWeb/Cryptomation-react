@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import Block from '../Block/Block';
 
 import styles from './blocks.module.scss';
@@ -10,6 +11,9 @@ import GetBlockchainIcon from '../../../assets/images/UseCases/get_blockchain.sv
 import MoveIcon from '../../../assets/images/UseCases/move.svg';
 
 const Blocks = () => {
+
+  const myRefs = useRef([]);
+  
   const arr = [
     {
       id: 0,
