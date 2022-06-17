@@ -21,7 +21,9 @@ const Textarea: FC<IProps> = ({ image, imageText }) => {
       {imageText ? (
         <p className={styles.text}>{imageText}</p>
       ) : (
-        <div className={styles.image}>{image}</div>
+        <div className={styles.image}>
+          <img src={image} alt="" />
+        </div>
       )}
     </div>
   );

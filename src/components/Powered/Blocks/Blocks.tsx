@@ -1,6 +1,6 @@
 import styles from './blocks.module.scss';
 import Block from '../Block/Block';
-import SQL from '../../../assets/images/Powered/sql.svg';
+import SQL from '../../../assets/images/Powered/sql.png';
 
 const Blocks = () => {
   const arr = [
@@ -22,7 +22,7 @@ const Blocks = () => {
       id: 2,
       title: 'SQL data lake',
       text: 'Need specific information for data analysis?<br><span>Get access</span>to the blockchain through the <span>database</span>. Build your reports and visualize on any BI',
-      image: <SQL />,
+      image: SQL.src,
       link: '',
     },
   ];

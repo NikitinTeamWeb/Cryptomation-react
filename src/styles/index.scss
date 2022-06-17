@@ -11,6 +11,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   position: relative;
+  overflow: hidden;
 }
 
 .wrapper-big {
@@ -101,4 +102,15 @@ h3 {
 
 svg {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 50px;
+    line-height: 48px;
+  }
+  h3 {
+    font-size: 35px;
+    line-height: 32px;
+  }
 }

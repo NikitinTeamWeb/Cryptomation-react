@@ -36,3 +36,10 @@
   max-width: 24px;
   min-width: 24px;
 }
+
+@media (max-width: 768px) {
+  .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
