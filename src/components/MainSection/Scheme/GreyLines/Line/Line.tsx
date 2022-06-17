@@ -1,14 +1,14 @@
 import { FC } from 'react';
-import styles from './greyLine.module.scss';
+import styles from './line.module.scss';
 
 interface IProps {
-  id: string;
+  id: any;
   path: string;
 }
 
-const GreyLine: FC<IProps> = ({ id, path }) => {
+const Line: FC<IProps> = ({ id, path }) => {
   return (
-    <g id={id}>
+    <g id={'line-' + id}>
       <path
         className={styles.line}
         opacity="0.6"
@@ -20,4 +20,4 @@ const GreyLine: FC<IProps> = ({ id, path }) => {
   );
 };
 
-export default GreyLine;
+export default Line;
