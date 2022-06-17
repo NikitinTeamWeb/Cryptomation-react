@@ -63,3 +63,17 @@
     align-items: center;
   }
 }
+
+@media (max-width: 999px) {
+  .block {
+    padding: 30px 20px 30px;
+  }
+  .title {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 999px) {
+  .text {
+    line-height: 25px;
+  }
+}
