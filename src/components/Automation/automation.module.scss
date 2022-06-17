@@ -41,3 +41,30 @@
   width: 100%;
   margin: 60px auto 0;
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .el1,
+  .el2 {
+    display: none;
+  }
+
+  .text {
+    margin-top: 20px;
+    br {
+      display: none;
+    }
+    span {
+      display: block;
+      width: max-content;
+      margin: 0 auto;
+    }
+  }
+
+  .scheme {
+    margin-top: 0;
+  }
+}
