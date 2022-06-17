@@ -29,3 +29,27 @@
   color: rgba($black, 0.7);
   margin-top: 20px;
 }
+
+@media (max-width: 998px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .info {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+    svg {
+      height: auto;
+    }
+  }
+
+  .info {
+    h2 {
+      line-height: 40px;
+    }
+  }
+}
