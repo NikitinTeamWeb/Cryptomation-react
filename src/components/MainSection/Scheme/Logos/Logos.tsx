@@ -31,7 +31,7 @@ const Logos: FC<IProps> = ({ isAnimate }) => {
       path: 'M320 165C320 165 484 258 661.5 260.5',
       translate: '0 0; 0 24; 20 30',
       pathCenter: 'M675.5 213V153',
-      centerStart: 'startButton.click + 6.5s',
+      centerStart: 'startButton.click + 7s',
       centerTranslate: '59, 56',
     },
     {
@@ -49,7 +49,7 @@ const Logos: FC<IProps> = ({ isAnimate }) => {
       path: 'M205.5 267.5C205.5 267.5 282.057 355.576 385 363C489 370.5 555 346 620 295',
       translate: '0 0; 0 24; 25 30',
       pathCenter: 'M675 212.816C669.143 215.398 629.364 190.521 628 155',
-      centerStart: 'startButton.click + 6.5s',
+      centerStart: 'startButton.click + 7s',
       centerTranslate: '42, 57',
     },
     {
@@ -58,7 +58,7 @@ const Logos: FC<IProps> = ({ isAnimate }) => {
       path: 'M1185.5 64.9999C1185.5 64.9999 967.5 -4.00011 730 241.5',
       translate: '0 0; 0 24; 20 30',
       pathCenter: 'M675 212.816C669.143 215.398 629.364 190.521 628 155',
-      centerStart: 'startButton.click + 7.5s',
+      centerStart: 'startButton.click + 8.5s',
       centerTranslate: '25, 25',
     },
     {
@@ -76,7 +76,7 @@ const Logos: FC<IProps> = ({ isAnimate }) => {
       path: 'M983 291C983 291 864.5 324 740 275',
       translate: '0 0; 0 24; 20 30',
       pathCenter: 'M675 213C680.857 215.568 720.636 190.827 722 155.5',
-      centerStart: 'startButton.click + 6.5s',
+      centerStart: 'startButton.click + 7s',
       centerTranslate: '53, 57',
     },
     {
@@ -85,7 +85,7 @@ const Logos: FC<IProps> = ({ isAnimate }) => {
       path: 'M1144.5 267.5C1144.5 267.5 1067.94 355.576 965 363C861 370.5 795 346 730 295',
       translate: '0 0; 0 24; 20 30',
       pathCenter: 'M675 213C680.857 215.568 720.636 190.827 722 155.5',
-      centerStart: 'startButton.click + 7.5s',
+      centerStart: 'startButton.click + 8.5s',
       centerTranslate: '53, 57',
     },
   ];
@@ -172,7 +172,6 @@ const Logos: FC<IProps> = ({ isAnimate }) => {
                   keyTimes="0; 0.2; 0.9; 1"
                   dur="5s"
                   begin="startButton.click"
-                  d="circ"
                 />
 
                 <animate
