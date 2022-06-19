@@ -8,14 +8,14 @@ const Blocks = () => {
       id: 0,
       title: 'GRPC methods',
       text: "Don't want unexpected errors in your code? Use our strongly typed APIs with proto",
-      imageText: '123123',
+      imageText: true,
       link: '',
     },
     {
       id: 1,
       title: 'Rest API',
       text: '<span>Getting crypto data</span> in you web3 app with any http client. ',
-      imageText: '123123',
+      imageText: true,
       link: '',
     },
     {
@@ -35,6 +35,7 @@ const Blocks = () => {
         return (
           <div className={styles.block}>
             <Block
+              id={id}
               title={title}
               text={text}
               link={link}

@@ -67,6 +67,12 @@ body {
   width: max-content;
 }
 
+.button-border {
+  color: $black;
+  background: transparent;
+  border: 1px solid rgba($black, 0.2);
+}
+
 .mainTitle {
   font-family: $fontTitle;
   font-weight: 400;

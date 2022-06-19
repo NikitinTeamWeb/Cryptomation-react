@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import styles from './textarea.module.scss';
 import cn from 'classnames';
 
@@ -6,10 +6,11 @@ import LightsIcon from '../../../assets/images/Powered/Lights.svg';
 
 interface IProps {
   image?: any;
-  imageText?: string;
+  imageText?: boolean;
+  children: ReactNode;
 }
 
-const Textarea: FC<IProps> = ({ image, imageText }) => {
+const Textarea: FC<IProps> = ({ image, imageText, children }) => {
   return (
     <div className={cn(styles.block, { [styles.blockImage]: image })}>
       {!image && (
@@ -19,7 +20,7 @@ const Textarea: FC<IProps> = ({ image, imageText }) => {
       )}
 
       {imageText ? (
-        <p className={styles.text}>{imageText}</p>
+        <p className={styles.text}>{children}</p>
       ) : (
         <div className={styles.image}>
           <img src={image} alt="" />

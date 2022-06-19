@@ -18,3 +18,12 @@
     color: $white;
   }
 }
+
+.stick {
+  .item {
+    color: $black;
+    &:hover {
+      color: $yellow;
+    }
+  }
+}

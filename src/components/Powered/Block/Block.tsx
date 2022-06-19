@@ -6,17 +6,27 @@ import Textarea from '../Textarea/Textarea';
 import LinkBlue from '../../../assets/images/link_blue.png';
 
 interface IProps {
+  id: number;
   title: string;
   text: string;
   link: string;
   image?: any;
-  imageText?: string;
+  imageText?: boolean;
 }
 
-const Block: FC<IProps> = ({ title, text, link, image, imageText }) => {
+const Block: FC<IProps> = ({ id, title, text, link, image, imageText }) => {
   return (
     <>
-      <Textarea image={image} imageText={imageText} />
+      <Textarea image={image} imageText={imageText}>
+        {`http --json POST 'https://rpc.testnet.near.org/' \
+    'Content-Type':'application/json' \
+    jsonrpc="2.0" \
+    id="dontcare" \
+    method="block" \
+    params:="{
+  \"block_id\": 66416900
+}"`}
+      </Textarea>
       <h3 className={styles.title}>{title}</h3>
       <p dangerouslySetInnerHTML={{ __html: text }} className={styles.text}></p>
       <Link href={link}>
