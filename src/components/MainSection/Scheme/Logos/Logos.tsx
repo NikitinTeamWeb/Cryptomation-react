@@ -4,7 +4,12 @@ import cn from 'classnames';
 
 import El1 from '../../../../assets/images/mainSection/scheme-el1.svg';
 import El2 from '../../../../assets/images/mainSection/scheme-el2.svg';
-
+import El3 from '../../../../assets/images/mainSection/scheme-el3.svg';
+import El4 from '../../../../assets/images/mainSection/scheme-el4.svg';
+import El5 from '../../../../assets/images/mainSection/scheme-el5.svg';
+import El6 from '../../../../assets/images/mainSection/scheme-el6.svg';
+import El7 from '../../../../assets/images/mainSection/scheme-el7.svg';
+import El8 from '../../../../assets/images/mainSection/scheme-el8.svg';
 interface IProps {
   isAnimate: boolean;
 }
@@ -16,12 +21,64 @@ const Logos: FC<IProps> = ({ isAnimate }) => {
       icon: <El1 />,
       path: 'M164.5 65C164.5 65 390 -3.00015 658 271.5',
       translate: '0 0; 0 0; 20 10',
+      pathCenter: 'M675 165L675.5 209.5',
+      centerStart: 'startButton.click + 6s',
     },
     {
       id: 1,
       icon: <El2 />,
       path: 'M320 165C320 165 484 258 661.5 260.5',
-      translate: '0 0; 0 0; 20 10',
+      translate: '0 0; 0 24; 20 30',
+      pathCenter: 'M675 165L675.5 209.5',
+      centerStart: 'startButton.click + 6.5s',
+    },
+    {
+      id: 2,
+      icon: <El3 />,
+      path: 'M367 291C367 291 485.5 324 610 275',
+      translate: '0 0; 0 24; 20 30',
+      pathCenter: 'M723 153C723 153 720 196.609 680 212',
+      centerStart: 'startButton.click + 5.5s',
+    },
+    {
+      id: 3,
+      icon: <El4 />,
+      path: 'M205.5 267.5C205.5 267.5 282.057 355.576 385 363C489 370.5 555 346 620 295',
+      translate: '0 0; 0 24; 25 30',
+      pathCenter: 'M723 153C723 153 720 196.609 680 212',
+      centerStart: 'startButton.click + 6s',
+    },
+    {
+      id: 4,
+      icon: <El5 />,
+      path: 'M1185.5 64.9999C1185.5 64.9999 967.5 -4.00011 730 241.5',
+      translate: '0 0; 0 24; 20 30',
+      pathCenter: 'M723 153C723 153 720 196.609 680 212',
+      centerStart: 'startButton.click + 6.5s',
+    },
+    {
+      id: 5,
+      icon: <El6 />,
+      path: 'M1030 165C1030 165 915.5 254 738 256.5',
+      translate: '0 0; 0 24; 20 30',
+      pathCenter: 'M626 153C626 153 629 196.609 669 212',
+      centerStart: 'startButton.click + 5.5s',
+    },
+    {
+      id: 6,
+      icon: <El7 />,
+      path: 'M983 291C983 291 864.5 324 740 275',
+      translate: '0 0; 0 24; 20 30',
+      pathCenter: 'M626 153C626 153 629 196.609 669 212',
+      centerStart: 'startButton.click + 6s',
+    },
+    {
+      id: 7,
+      icon: <El8 />,
+      path: 'M1144.5 267.5C1144.5 267.5 1067.94 355.576 965 363C861 370.5 795 346 730 295',
+      translate: '0 0; 0 24; 20 30',
+      pathCenter: 'M626 153C626 153 629 196.609 669 212',
+      centerStart: 'startButton.click + 6.5s',
     },
   ];
 
@@ -42,7 +99,7 @@ const Logos: FC<IProps> = ({ isAnimate }) => {
         stroke="black"
         stroke-width="1"
       />
-      {arr.map(({ id, icon, path, translate }) => {
+      {arr.map(({ id, icon, path, translate, pathCenter, centerStart }) => {
         return (
           <>
             <g
@@ -58,9 +115,19 @@ const Logos: FC<IProps> = ({ isAnimate }) => {
                     type="scale"
                     from="1"
                     to=".7"
-                    dur="7s"
+                    dur="5s"
                     begin="startButton.click"
-                    repeatCount="indefinite"
+                    // repeatCount="indefinite"
+                  />
+                  <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="scale"
+                    from=".5"
+                    to=".5"
+                    dur="5s"
+                    begin={centerStart}
+                    // repeatCount="indefinite"
                   />
                 </g>
                 <animateTransform
@@ -68,10 +135,19 @@ const Logos: FC<IProps> = ({ isAnimate }) => {
                   type="translate"
                   values={translate}
                   keyTimes="0; 0.8; 1"
-                  dur="7s"
+                  dur="5s"
                   begin="startButton.click"
-                  repeatCount="indefinite"
+                  // repeatCount="indefinite"
                 />
+                {/* <animateTransform
+                  attributeName="transform"
+                  type="translate"
+                  values={translate}
+                  keyTimes="0; 0.8; 1"
+                  dur="5s"
+                  begin={centerStart}
+                  // repeatCount="indefinite"
+                /> */}
               </g>
 
               <animate
@@ -81,15 +157,36 @@ const Logos: FC<IProps> = ({ isAnimate }) => {
                 to="0"
                 values="0; 1; 1; 0"
                 keyTimes="0; 0.2; 0.9; 1"
-                dur="7s"
+                dur="5s"
                 begin="startButton.click"
-                repeatCount="indefinite"
+                // repeatCount="indefinite"
+                d="circ"
+              />
+
+              <animate
+                attributeType="CSS"
+                attributeName="opacity"
+                from="0"
+                to="0"
+                values="0; 1; 1; 0"
+                keyTimes="0; 0.2; 0.9; 1"
+                dur="5s"
+                begin={centerStart}
+                // repeatCount="indefinite"
+                d="circ"
+              />
+
+              <animateMotion
+                dur="5s"
+                begin={centerStart}
+                path={pathCenter}
+                // repeatCount="indefinite"
               />
               <animateMotion
-                dur="7s"
+                dur="5s"
                 begin="startButton.click"
                 path={path}
-                repeatCount="indefinite"
+                // repeatCount="indefinite"
               />
             </g>
           </>

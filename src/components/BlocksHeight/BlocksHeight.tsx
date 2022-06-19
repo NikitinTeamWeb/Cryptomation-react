@@ -46,7 +46,7 @@ const BlocksHeight: FC<IProps> = ({ children }) => {
     childrenRef.current.map((item) => {
       return (item.style.height = heightBlock + 'px');
     });
-  }, [heightBlock, childrenRef, width]);
+  }, [heightBlock, width]);
 
   return (
     <>

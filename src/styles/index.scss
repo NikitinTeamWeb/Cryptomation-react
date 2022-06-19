@@ -121,3 +121,8 @@ svg {
     line-height: 32px;
   }
 }
+
+#startButton {
+  transform: translateY(-100px);
+  z-index: 100;
+}
