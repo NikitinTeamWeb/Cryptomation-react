@@ -17,7 +17,7 @@ interface IProp {
 
 const Block: FC<IProps> = ({ item }) => {
   return (
-    <div className={styles.block}>
+    <>
       <div className={styles.icon}>{item.icon}</div>
       <h4
         className={styles.title}
@@ -35,7 +35,7 @@ const Block: FC<IProps> = ({ item }) => {
           More details
         </a>
       </Link>
-    </div>
+    </>
   );
 };
 
