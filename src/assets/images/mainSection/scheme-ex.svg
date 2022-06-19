@@ -3,7 +3,7 @@
 <rect width="1350" height="395" fill="white"/>
 </mask>
 <g mask="url(#mask0_0_1213)">
-<path d="M675.5 153V213" stroke="black"/>
+<path d="M675.5 213V153" stroke="black"/>
 <path d="M675 213C680.857 215.568 720.636 190.827 722 155.5" stroke="black"/>
 <path d="M675 212.816C669.143 215.398 629.364 190.521 628 155" stroke="black"/>
 <g filter="url(#filter0_dd_0_1213)">

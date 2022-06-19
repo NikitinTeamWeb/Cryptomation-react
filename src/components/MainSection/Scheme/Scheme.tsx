@@ -139,25 +139,28 @@ const Scheme = () => {
         </g>
         <g id="lines-center">
           <path
-            d="M626 153C626 153 629 196.609 669 212"
+            d="M675 213C680.857 215.568 720.636 190.827 722 155.5"
             stroke="url(#paint0_linear_0_1213)"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-dasharray="4"
+            className={styles.line}
           />
           <path
-            d="M723 153C723 153 720 196.609 680 212"
+            d="M675 212.816C669.143 215.398 629.364 190.521 628 155"
             stroke="url(#paint1_linear_0_1213)"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-dasharray="4"
+            className={styles.line}
           />
           <path
-            d="M675 165L675.5 209.5"
+            d="M675.5 213V153"
             stroke="url(#paint2_linear_0_1213)"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-dasharray="4"
+            className={styles.line}
           />
           <circle cx="675" cy="214" r="4" fill="#250A2C" stroke="white" />
         </g>

@@ -9,21 +9,19 @@ const CenterBlock = () => {
           attributeName="transform"
           attributeType="XML"
           type="scale"
-          values="1; 1.1; 1.1; 1"
-          keyTimes="0; 0.4; 0.7; 1"
-          dur=".5s"
-          begin="startButton.click + .5s"
-          // repeatCount="indefinite"
+          values="1; 1.15; 1.15; 1"
+          keyTimes="0; 0.5; 0.6; 1"
+          dur="3s"
+          begin="startButton.click + 4.2s"
         />
       </g>
       <animateTransform
         attributeName="transform"
         type="translate"
-        values="0,0; -67, -30; -67, -30; 0,0"
-        keyTimes="0; 0.4; 0.7; 1"
-        dur=".5s"
-        begin="startButton.click + .5s"
-        // repeatCount="indefinite"
+        values="0,0; -100, -35; -100, -35; 0,0"
+        keyTimes="0; 0.5; 0.6; 1"
+        dur="3s"
+        begin="startButton.click + 4.2s"
       />
     </g>
   );
