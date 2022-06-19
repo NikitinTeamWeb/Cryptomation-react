@@ -1,0 +1,20 @@
+.el-0 {
+  transform: translate(-10%, -24%);
+}
+.el-1 {
+  transform: translate(-6%, -20%);
+}
+
+.element {
+  opacity: 0;
+}
+
+.animate {
+  animation: scale 7s linear;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(0.8);
+  }
+}

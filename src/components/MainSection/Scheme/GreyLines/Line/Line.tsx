@@ -8,9 +8,10 @@ interface IProps {
 
 const Line: FC<IProps> = ({ id, path }) => {
   return (
-    <g id={'line-' + id}>
+    <g>
       <path
         className={styles.line}
+        id={'line-' + id}
         opacity="0.6"
         d={path}
         stroke="#A95094"

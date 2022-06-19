@@ -197,7 +197,7 @@ const Scheme = () => {
                     rx="20.9635"
                     ry="8.01454"
                     stroke="white"
-                    stroke-width="1.91667"
+                    strokeWidth="1.91667"
                   />
                   <ellipse
                     id="Oval_10"
@@ -207,7 +207,7 @@ const Scheme = () => {
                     ry="8.00684"
                     transform="rotate(60 41.3281 88.1426)"
                     stroke="white"
-                    stroke-width="1.91667"
+                    strokeWidth="1.91667"
                   />
                   <ellipse
                     id="Oval_11"
@@ -217,7 +217,7 @@ const Scheme = () => {
                     ry="8.00684"
                     transform="rotate(120 41.3282 88.1426)"
                     stroke="white"
-                    stroke-width="1.91667"
+                    strokeWidth="1.91667"
                   />
                 </g>
               </g>
