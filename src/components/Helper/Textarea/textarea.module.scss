@@ -14,10 +14,12 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.5px;
-  color: $white;
+  color: $yellow;
   overflow-y: auto;
   font-family: $fontOther;
   padding-left: 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .top {

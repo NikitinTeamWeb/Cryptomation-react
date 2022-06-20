@@ -9,6 +9,7 @@ const Blocks = () => {
       title: 'GRPC methods',
       text: "Don't want unexpected errors in your code? Use our strongly typed APIs with proto",
       imageText: true,
+      color: 'white',
       link: '',
     },
     {
@@ -16,6 +17,7 @@ const Blocks = () => {
       title: 'Rest API',
       text: '<span>Getting crypto data</span> in you web3 app with any http client. ',
       imageText: true,
+      color: 'yellow',
       link: '',
     },
     {
@@ -31,7 +33,7 @@ const Blocks = () => {
 
   return (
     <div className={styles.blocks}>
-      {arr.map(({ id, title, text, imageText, image, link }) => {
+      {arr.map(({ id, title, text, imageText, image, link, color }) => {
         return (
           <div className={styles.block}>
             <Block
@@ -41,6 +43,7 @@ const Blocks = () => {
               link={link}
               image={image}
               imageText={imageText}
+              color={color}
             />
           </div>
         );

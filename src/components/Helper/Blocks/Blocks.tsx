@@ -33,7 +33,7 @@ const Blocks = () => {
       {arr.map(({ id, title, text, imageText, image, link }) => {
         return (
           <div className={styles.block} key={id}>
-            <Block title={title} text={text} link={link} />
+            <Block id={id} title={title} text={text} link={link} />
           </div>
         );
       })}
